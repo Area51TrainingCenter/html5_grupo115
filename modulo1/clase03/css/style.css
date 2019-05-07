@@ -1,0 +1,109 @@
+*{
+
+}
+
+body
+{
+	font-family: 'Roboto','Arial';
+}
+
+
+
+a{
+	display: inline-block;
+}
+
+img
+{
+	display: block;
+}
+
+header
+{
+	background-color: #003580;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+header nav
+{
+	text-align: center;
+}
+
+header nav a{
+	color: white;
+	text-decoration: none;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 0;
+	margin-bottom: 0;
+/*
+	margin: 0 10px 0 10px;
+
+	margin: 0 10px;*/
+}
+
+footer
+{
+	text-align: center;
+}
+
+
+section
+{
+/*	height: 100px;*/
+	background-color: grey;
+}
+
+table tr th,
+table tr td
+{
+	border: .5px solid #000000;
+}
+
+.container
+{
+	width: 1140px;
+	height: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.container span
+{
+	background-color: yellow;
+}
+
+.container-fluid
+{
+	width: 100%;
+	height: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.negro
+{
+	background-color: black;
+}
+
+.form-bloque
+{
+	display: block;margin-bottom: 10px;
+}
+
+.form-control
+{
+	display: block;
+	padding:5px;
+	height: 30px;
+	width: 100%;
+}
+
+#logo
+{
+	width: 150px;
+	height: auto;
+}
