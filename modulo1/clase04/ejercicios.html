@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Hoteles con grandes descuentos en 120.000 destinos de todo el mundo. Consulta los comentarios y encuentra el mejor precio en todo tipo de hoteles con Booking.es.">
+		<meta name="keywords" content="hospedaje, alojamiento, hotel, hoteles">
+		<meta name="author" content="Alonso Perez">
+		<!--
+		<meta property="og:title" content="Mi primera web" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="http://www.imdb.com/title/tt0117500/" />
+		<meta property="og:image" content="img/fb.jpg" />-->
+		<title>Mi primera web</title>
+		<link rel="shortcut icon" href="img/favicon.png">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<a href="index.html"><img id="logo" src="img/logo.png" alt="aqui va el logo" title="logo"></a>
+				<nav>
+					<a href="alojamiento.html">ALOJAMIENTO</a>
+					<a href="vuelos.html">VUELOS</a>
+					<a href="alquilercoches.html">ALQUILER DE COCHES</a>
+					<a href="taxis.html">TAXIS AL AEROPUERTO</a>
+				</nav>
+			</div>
+		</header>
+		<main>
+			<section class="negro">
+				<div class="container">
+					<p><span>Hola Mundo</span> <big>Lorem ipsum dolor</big> sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. <span>Ut enim ad minim veniam,
+					quis nostrud</span> exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+					<hr>
+					<blockquote>consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</blockquote>
+					<pre>
+						homepage la
+						como estas
+						espero que bien
+					</pre>
+					<code>
+						&lt;html&gt;<br>
+							&lt;head&gt;<br>
+							&lt;/head&gt;<br>
+						&lt;/html&gt;
+					</code>
+				</div>
+				<!--<article>
+					<figure>
+						<img src="img/imagen.jpg">
+						<figcaption>Aqui vemos un pequeño paisaje</figcaption>
+					</figure>
+				</article>-->
+			</section>
+			<section class="negro">
+				<div class="container">
+					<table bgcolor="grey" width="100%" border="1" cellspacing="10px" cellpadding="10px">
+						<tr>
+							<th width="10%" height="50px" bgcolor="yellow" align="left" valign="top" colspan="3">
+								DNI
+							</th>
+						</tr>
+						<tr>
+							<td>42890190</td>
+							<td>Alonso</td>
+							<td rowspan="3">Perez</td>
+						</tr>
+						<tr>
+							<td>44826745</td>
+							<td>Mauricio</td>
+				
+						</tr>
+						<tr>
+							<td>70102948</td>
+							<td>Fernando</td>
+						
+						</tr>
+						<tr>
+							<td>42575477</td>
+							<td>Luis MIguel</td>
+							<td>Benavides</td>
+						</tr>
+						<tr>
+							<td>45977828</td>
+							<td>Rocio</td>
+							<td>Sotomayor</td>
+						</tr>
+						<tr>
+							<td>43989710</td>
+							<td>Sergio</td>
+							<td>Rubio</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+			<section>
+				<div class="container">
+					<form id="frmcontacto" name="frmcontacto" method="post" action="registra.php" autocomplete="off" enctype="multipart/form-data" >
+						<input type="hidden" name="id" value="123456">
+						<fieldset>
+							   <legend>Ingresa tu informacion:</legend>
+							<div class="form-bloque">
+								<input type="text" name="nombre" id="nombre" placeholder="Nombre" maxlength="30" size="30" minlength="1"  required class="form-control">
+							</div>
+						</fieldset>
+
+						<div class="form-bloque">
+							<input type="password" name="password" id="password" placeholder="Password" class="form-control">
+						</div>
+
+						<div class="form-bloque">
+							<input type="color" name="color" id="color"  class="form-control">
+						</div>
+
+						<div class="form-bloque">
+							<input type="date" name="fecha" id="fecha"  class="form-control">
+						</div>
+
+						<div class="form-bloque">
+							<input type="month" name="meses" id="meses"  class="form-control" >
+						</div>	
+
+						<div class="form-bloque">
+							<input type="week" name="semana" id="semana"  class="form-control" >
+						</div>	
+
+						<div class="form-bloque">
+							<input type="number" name="dni" id="dni"  class="form-control" min="1" max="9999" >
+						</div>	
+						<div class="form-bloque">
+							<input type="range" name="points" min="0" max="10">
+						</div>
+						<div class="form-bloque">
+							 <input type="tel" name="phone" pattern="\+[0-9]{3}-[0-9]{2}-[0-9]{3}">
+							 <label>+123-45-678</label>
+						</div>					
+
+						<div class="form-bloque">
+							<input type="datetime-local" name="fechahora" id="fechahora"  class="form-control">
+						</div>	
+
+						<div class="form-bloque">
+							<input type="time" name="tiempo" id="tiempo"  class="form-control" value="16:00:52">
+						</div>	
+
+						<div class="form-bloque">
+							<input type="email" name="email" id="email"  class="form-control">
+						</div>
+
+						<div class="form-bloque">
+							<input type="file" name="archivo" id="archivo"  class="form-control" multiple accept=".doc,.ppt,.html">
+						</div>
+
+						<div class="form-bloque">
+							  <input type="url" name="homepage">
+						</div>
+
+						<div class="form-bloque">
+							  <input type="radio" name="sexo" checked value="masculino" > Masculino
+							  <input type="radio" name="sexo" value="femenino" > Masculino
+						</div>
+
+						<div class="form-bloque">
+							  <input type="checkbox" name="modelo[]" checked value="1" > Auris
+							  <input type="checkbox" name="modelo[]" value="2" > Toyota
+						</div>
+						<div class="form-bloque">
+							<select name="distritos-lista-simple" id="distritos" required>
+							 	<option value="">-- Esoge un distrito --</option>
+								<option value="1">Lima</option>
+								<option value="2">Surco</option>
+								<option value="3">Carmen de la Legua</option>
+							 	<option value="4">San Isidro</option>
+							 	<option value="5">La Molina</option>
+							 	<option value="6">La VIctoria</option>
+							 	<option value="7">Belavista</option>
+							 </select>
+
+							 <select name="distritos-lista-agrupada" id="distritos" required>
+							 	<option value="">-- Esoge un distrito --</option>
+							 	<optgroup  label="Cono Sur">
+									<option value="1">Lima</option>
+									<option value="2">Surco</option>
+									<option value="3">Carmen de la Legua</option>
+							 	</optgroup>
+							 	<optgroup  label="Cono Norte">
+								 	<option value="4">San Isidro</option>
+								 	<option value="5">La Molina</option>
+								 	<option value="6">La VIctoria</option>
+								 	<option value="7">Belavista</option>
+								 </optgroup>
+							 </select>
+
+							 <select name="distritos-lista-multiple" id="distritos" required multiple>
+							 	<option value="">-- Esoge un distrito --</option>
+								<option value="1">Lima</option>
+								<option value="2">Surco</option>
+								<option value="3">Carmen de la Legua</option>
+							 	<option value="4">San Isidro</option>
+							 	<option value="5">La Molina</option>
+							 	<option value="6">La VIctoria</option>
+							 	<option value="7">Belavista</option>
+							 </select>
+
+							 <select name="distritos-lista-agrupada-multiple" id="distritos" required multiple>
+							 	<option value="">-- Esoge un distrito --</option>
+							 	<optgroup  label="Cono Sur">
+									<option value="1">Lima</option>
+									<option value="2">Surco</option>
+									<option value="3">Carmen de la Legua</option>
+							 	</optgroup>
+							 	<optgroup  label="Cono Norte">
+								 	<option value="4">San Isidro</option>
+								 	<option value="5">La Molina</option>
+								 	<option value="6">La VIctoria</option>
+								 	<option value="7">Belavista</option>
+								 </optgroup>
+							 </select>
+						</div>
+
+						<textarea name="mensaje" id="mensaje" cols="50" rows="10" required>
+							
+						</textarea>
+
+						<div class="form-bloque">
+							<input type="submit" id="btnenviar"name="btnenviar" value="Enviar">
+							<input type="reset" name="" value="Limpiar">
+						</div>
+					</form>
+				</div>
+			</section>
+			<section>
+				
+			</section>
+		</main>
+		<footer>
+			&copy; 2019 - Derechos Reservados
+		</footer>
+	</body>
+</html>
