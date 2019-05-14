@@ -1,0 +1,387 @@
+*{
+	box-sizing: border-box;
+}
+
+body
+{
+	font-family: 'Roboto','Arial';
+}
+
+textarea {
+    resize: none;
+}
+
+a{
+	display: inline-block;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+	margin-top: 0;
+	margin-bottom: 15px;
+}
+
+img
+{
+	display: block;
+}
+
+header
+{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+/*	background-color: #003580;*/
+	padding-top: 15px;
+	padding-bottom: 15px;
+	text-align: center;
+	z-index: 2;
+}
+
+header .brand
+{
+	margin-bottom: 10px;
+}
+
+header nav
+{
+	text-align: center;
+}
+
+header nav a{
+	color: white;
+	text-decoration: none;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 0;
+	margin-bottom: 0;
+/*
+	margin: 0 10px 0 10px;
+
+	margin: 0 10px;*/
+}
+
+footer
+{
+	text-align: center;
+}
+
+
+section
+{
+
+}
+
+table tr th,
+table tr td
+{
+	border: .5px solid #000000;
+}
+
+.container
+{
+	width: 1140px;
+	height: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.container span
+{
+	background-color: yellow;
+}
+
+.container-fluid
+{
+	width: 100%;
+	height: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.row
+{
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
+.columna
+{
+	padding-left: 15px;
+	padding-right: 15px;
+	display: inline-block;
+	vertical-align: top;
+	margin-left: -2px;
+	margin-right: -2px;
+}
+
+.columna-100
+{
+	width: 100%;
+}
+
+.columna-50
+{
+	width: 50%;
+}
+
+.columna-33
+{
+	width: 33%;
+}
+
+.columna-25
+{
+	width: 25%;
+}
+
+.columna-20
+{
+	width: 20%;
+}
+
+.columna-borde
+{
+	border: 1px solid #bbb;
+	padding: 30px;
+
+}
+
+.btn
+{
+	display: inline-block;
+	padding: 15px 30px;
+	border-style: solid;
+	border-width: 1px;
+	text-decoration: none;
+}
+
+.btn.btnazul
+{
+	background-color: #fff;
+	border-color: #003580;
+}
+
+.img-cuadrado
+{
+	width: 100%;
+	padding-bottom: 100%;
+	position: relative;
+	margin-bottom: 15px;
+}
+
+.img-cuadrado img
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.seccion
+{
+	padding-top: 45px;
+	padding-bottom: 45px;
+}
+
+.seccion-ofertas .lado-izquierdo
+{
+	display: inline-block;
+	padding-bottom: 15%;
+	width: 15%;
+	position: relative;
+	margin: 0 -2px;
+		vertical-align: middle;
+}
+
+.seccion-ofertas .lado-izquierdo img
+{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.seccion-ofertas .lado-derecho
+{
+	display: inline-block;
+	width: 85%;
+	position: relative;
+	margin: 0 -2px;	
+	padding-left: 15px;
+	vertical-align: middle;
+}
+
+
+.seccion-carrusel p
+{
+	color: #bbb;
+}
+
+/***********caso 1**********************
+.seccion-video
+{
+	height: 100vh;
+	width: 100%;
+	background-color: #000;
+	overflow: hidden;
+}
+
+.seccion-video .container-fluid
+{
+	height: 100%;
+	padding: 0;
+}
+
+.seccion-video .container-fluid video
+{
+	object-fit: cover;
+	object-position: center;
+	width: 100%;
+	height: 100%;
+	opacity: 0.5;
+}
+*/
+
+/**************caso 2*******************
+.seccion-video
+{
+	height: 100vh;
+	width: 100%;
+	overflow: hidden;
+}
+
+.seccion-video .container-fluid
+{
+	height: 100%;
+	padding: 0;
+}
+
+.seccion-video .container-fluid video
+{
+	object-fit: cover;
+	object-position: center;
+	width: 100%;
+	height: 100%;
+}
+
+.seccion-video .container-fluid .negrura
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: #000;
+	opacity: 0.5;
+}
+
+*/
+ /*******************caso3********************/
+.seccion-video
+{
+	height: auto;
+	width: 100%;
+	overflow: hidden;
+}
+
+.seccion-video .container-fluid
+{
+	position: relative;
+	padding-bottom: 56.25%;
+	overflow: hidden;
+}
+
+.seccion-video .container-fluid video
+{
+	object-fit: cover;
+	object-position: center;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.seccion-video .container-fluid .negrura
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: 0.5;
+}
+
+.seccion-video .container-fluid .bloque-textos
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    padding: 0 30px;
+    text-align: center;
+   /* width: 800px;
+    height: 250px;
+    margin-left: -400px;
+    margin-top: -125px;*/
+
+   	width: 50%;
+    margin-left: -25%;
+   	height: 250px;
+    margin-top: -125px;
+}
+
+.seccion-video .container-fluid .bloque-textos h1
+{
+	font-size: 50px;
+	margin-top: 0;
+}
+
+.seccion-video .container-fluid .bloque-textos p
+{
+	font-size: 18px;
+	margin-top: 0;
+}
+
+.seccion-video .container-fluid .bloque-textos a
+{
+	color: #fff;
+	padding: 10px 45px;
+	font-size: 25px;
+	background-color: #feba02;
+	text-decoration: none;
+}
+
+
+.negro
+{
+	/*background-color: black;*/
+}
+
+.form-bloque
+{
+	display: block;margin-bottom: 10px;
+}
+
+.form-control
+{
+	display: block;
+	padding:5px;
+	height: 30px;
+	width: 100%;
+}
+
+#logo
+{
+	width: 150px;
+	height: auto;
+}
