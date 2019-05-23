@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+
+		body{
+			margin: 0;
+			padding: 0;
+		}
+
+		section{
+			display: flex;
+			justify-content: space-between;
+			flex-direction: row;
+			flex-wrap: wrap;
+			align-items: center;
+			/*align-content: center;*/
+			height: 100vh;
+			background-color: #CDDC39;
+		}
+
+		section .cuadrado
+		{
+			flex-basis: 30%;
+			height: 100px;
+			background-color: black;
+			border: 1px solid #f00;
+			color: yellow;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			/*order: 2;*/
+		}
+
+		section .cuadrado.arriba
+		{
+			/*align-self: flex-start;
+			order: 3;*/
+		}
+
+		section .cuadrado.abajo
+		{
+			/*align-self: flex-end;
+			order: 1;	*/		
+		}
+	</style>
+</head>
+<body>
+	<section>
+		<div class="cuadrado arriba">1</div>
+		<div class="cuadrado">2</div>
+		<div class="cuadrado abajo">3</div>
+		<!--<div class="cuadrado">4</div>
+		<div class="cuadrado">5</div>
+		<div class="cuadrado">6</div>
+		<div class="cuadrado">7</div>
+		<div class="cuadrado">8</div>
+		<div class="cuadrado">9</div>
+		<div class="cuadrado">10</div>
+		<div class="cuadrado">11</div>
+		<div class="cuadrado">12</div>
+		<div class="cuadrado">13</div>
+		<div class="cuadrado">14</div>
+		<div class="cuadrado">15</div>
+		<div class="cuadrado">16</div>
+		<div class="cuadrado">17</div>
+		<div class="cuadrado">18</div>
+		<div class="cuadrado">19</div>
+		<div class="cuadrado">20</div>
+		<div class="cuadrado">21</div>
+		<div class="cuadrado">22</div>
+		<div class="cuadrado">23</div>
+		<div class="cuadrado">24</div>-->
+	</section>
+</body>
+</html>
