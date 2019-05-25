@@ -1,0 +1,756 @@
+*{
+	box-sizing: border-box;
+}
+
+body
+{
+	font-family: 'Roboto','Arial';
+}
+
+textarea {
+    resize: none;
+}
+
+a{
+	display: inline-block;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+	margin-top: 0;
+	margin-bottom: 15px;
+}
+
+img
+{
+	display: block;
+}
+
+header
+{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+/*	background-color: #003580;*/
+	padding-top: 15px;
+	padding-bottom: 15px;
+	text-align: center;
+	z-index: 2;
+}
+
+header .container
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .brand
+{
+	/*margin-bottom: 10px;*/
+}
+
+header nav
+{
+	text-align: center;
+}
+
+header nav a{
+	color: white;
+	text-decoration: none;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 13px;
+/*
+	margin: 0 10px 0 10px;
+
+	margin: 0 10px;*/
+}
+
+footer
+{
+	text-align: center;
+}
+
+
+section
+{
+
+}
+
+table tr th,
+table tr td
+{
+	border: .5px solid #000000;
+}
+
+.burguer
+{
+	display: none;
+}
+
+.container
+{
+	height: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*.container span
+{
+	background-color: yellow;
+}*/
+
+.container-fluid
+{
+	width: 100%;
+	height: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.row
+{
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
+.columna
+{
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.columna-100
+{
+	width: 100%;
+	flex-basis: 100%;
+}
+
+.columna-50
+{
+	width: 50%;
+	flex-basis: 50%;	
+}
+
+.columna-33
+{
+	width: 33.33%;
+	flex-basis:  33.33%;		
+}
+
+.columna-25
+{
+	width: 25%;
+	flex-basis: 25%;		
+}
+
+.columna-20
+{
+	width: 20%;
+	flex-basis: 20%;		
+}
+
+.columna-borde
+{
+	border: 1px solid #bbb;
+	padding: 30px;
+	position: relative;
+}
+
+.columna-borde .cerrar
+{
+	top: 30px;
+	right: 30px;
+}
+
+.btn
+{
+	display: inline-block;
+	padding: 15px 30px;
+	border-style: solid;
+	border-width: 1px;
+	text-decoration: none;
+}
+
+.btn.btnazul
+{
+	background-color: #fff;
+	border-color: #009fe3;
+	color: #009fe3;
+}
+
+.btn.btnazul.btn-menosalto
+{
+	padding: 7.5px 15px;
+}
+
+.cerrar
+{
+	position: absolute;
+	right: 15px;
+	top: 15px;
+	color: #bbb;
+	font-size: 30px;
+}
+
+.img-cuadrado
+{
+	width: 100%;
+	padding-bottom: 100%;
+	position: relative;
+	margin-bottom: 15px;
+}
+
+.img-cuadrado img
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.contenedor-imagenes{
+	width: 100%;
+	padding-bottom: 56.25%;
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.contenedor-imagenes img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+	object-position: center;
+	width: 100%;
+	height: 100%;
+}
+
+.bloque-nombre,
+.bloque-precio
+{
+	color: #fff;
+}
+
+.bloque-nombre{
+	left: 15px;
+	top: 15px;
+	position: absolute;
+}
+
+.bloque-precio
+{
+	padding: 5px;
+	background-color: #666;
+	right: 15px;
+	bottom: 15px;
+	position: absolute;	
+	text-align: right;
+	font-size: 12px;
+}
+
+
+
+.bloque-nombre h2,
+.bloque-nombre  p,
+.bloque-precio h2,
+.bloque-precio p
+{
+	margin: 0;
+}
+
+.bloque-nombre h2
+{
+	display: inline-block;
+	margin-bottom: 5px;
+	vertical-align: bottom;
+	line-height: 1;
+}
+
+.contenedor-imagenes .bandera
+{
+    width: 24px;
+    position: relative;
+    display: inline-block;
+    vertical-align: bottom;
+    margin-left: 5px;
+}
+
+.seccion
+{
+	padding-top: 45px;
+	padding-bottom: 45px;
+}
+
+.portada
+{
+	height: 100vh;
+	position: relative;
+}
+
+.portada img
+{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.seccion-ofertas .lado-izquierdo
+{
+	display: inline-block;
+	padding-bottom: 15%;
+	width: 15%;
+	position: relative;
+	margin: 0 -2px;
+	vertical-align: middle;
+}
+
+.seccion-ofertas.ofertas-2 .lado-izquierdo
+{
+	padding-bottom: 25%;
+	width: 25%;
+}
+
+.seccion-ofertas .lado-izquierdo img
+{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.seccion-ofertas .lado-derecho
+{
+	display: inline-block;
+	width: 85%;
+	position: relative;
+	margin: 0 -2px;	
+	padding-left: 15px;
+	vertical-align: middle;
+}
+
+.seccion-ofertas.ofertas-2 .lado-derecho
+{
+	width: 75%;
+}
+
+.seccion-ofertas .lado-derecho #formsubscribete
+{
+	display: block;
+}
+
+.seccion-ofertas .lado-derecho #formsubscribete .btn
+{
+	vertical-align: middle;
+	margin-right: -2px;
+	margin-left: 2.5%;
+}
+
+
+.seccion-carrusel p
+{
+	color: #bbb;
+}
+
+/***********caso 1**********************
+.seccion-video
+{
+	height: 100vh;
+	width: 100%;
+	background-color: #000;
+	overflow: hidden;
+}
+
+.seccion-video .container-fluid
+{
+	height: 100%;
+	padding: 0;
+}
+
+.seccion-video .container-fluid video
+{
+	object-fit: cover;
+	object-position: center;
+	width: 100%;
+	height: 100%;
+	opacity: 0.5;
+}
+*/
+
+/**************caso 2*******************
+.seccion-video
+{
+	height: 100vh;
+	width: 100%;
+	overflow: hidden;
+}
+
+.seccion-video .container-fluid
+{
+	height: 100%;
+	padding: 0;
+}
+
+.seccion-video .container-fluid video
+{
+	object-fit: cover;
+	object-position: center;
+	width: 100%;
+	height: 100%;
+}
+
+.seccion-video .container-fluid .negrura
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: #000;
+	opacity: 0.5;
+}
+
+*/
+ /*******************caso3********************/
+.seccion-video
+{
+	height: auto;
+	width: 100%;
+	overflow: hidden;
+}
+
+.seccion-video .container-fluid
+{
+	position: relative;
+	padding-bottom: 56.25%;
+	overflow: hidden;
+}
+
+.seccion-video .container-fluid video
+{
+	object-fit: cover;
+	object-position: center;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.seccion-video .container-fluid .negrura
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: 0.5;
+}
+
+.seccion-video .container-fluid .bloque-textos
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    padding: 0 30px;
+    text-align: center;
+   /* width: 800px;
+    height: 250px;
+    margin-left: -400px;
+    margin-top: -125px;*/
+
+   	width: 50%;
+    margin-left: -25%;
+   	height: 250px;
+    margin-top: -125px;
+}
+
+.seccion-video .container-fluid .bloque-textos h1
+{
+	font-size: 50px;
+	margin-top: 0;
+}
+
+.seccion-video .container-fluid .bloque-textos p
+{
+	font-size: 18px;
+	margin-top: 0;
+}
+
+.seccion-video .container-fluid .bloque-textos a
+{
+	color: #fff;
+	padding: 10px 45px;
+	font-size: 25px;
+	background-color: #feba02;
+	text-decoration: none;
+}
+
+.seccion-carrusel-2 .columna-carrusel-2
+{
+	color: #666;
+}
+
+.seccion-carrusel-2 .columna-carrusel-2 .contenedor-imagen-carrusel-2
+{
+	padding-bottom: 100%;
+	width: 100%;
+	position: relative;
+	margin-bottom: 15px;
+}
+
+.seccion-carrusel-2 .columna-carrusel-2 .contenedor-imagen-carrusel-2 img
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+	object-position: center;
+	width: 100%;
+	height: 100%;
+}
+
+.seccion-carrusel-2 .columna-carrusel-2 h4
+{
+	margin-bottom: 0;
+	font-weight: 400;	
+}
+
+.seccion-carrusel-2 .columna-carrusel-2 p
+{
+	margin: 0;
+	font-size: 13px;
+}
+
+.seccion-carrusel-2 .columna-carrusel-2 .info-precio
+{
+	margin-top: 15px;
+}
+
+.seccion-carrusel-2 .columna-carrusel-2 .content-info
+{
+	margin-top: 10px;
+}
+
+.seccion-carrusel-2 .columna-carrusel-2 .content-info .info
+{
+	color: #fff;
+	background-color: #003580;
+	padding: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	margin-right: 5px;
+	display: inline-block;
+}
+
+.seccion-carrusel-2 .columna-carrusel-2 .content-info .valoracion
+{
+	color: #003580;
+	font-weight: bold;
+	font-size: 13px;
+	margin-right: 5px;
+	display: inline-block;	
+}
+
+.seccion-carrusel-2 .columna-carrusel-2 .content-info .comentarios
+{
+	color: #bbb;
+	font-size: 13px;
+	display: inline-block;	
+}
+
+.seccion-proximos .contenedor-img-proximo
+{
+	position: relative;
+	padding-bottom: 100%;
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+.seccion-proximos .columna-50 .contenedor-img-proximo
+{
+	padding-bottom: 56.25%;
+}
+
+.seccion-proximos .contenedor-img-proximo img
+{
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.seccion-proximos .contenedor-img-proximo .bloque-texto-proximo
+{
+	padding: 15px;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	color: #fff;
+}
+
+
+.negro
+{
+	/*background-color: black;*/
+}
+
+.form-bloque
+{
+	display: block;margin-bottom: 10px;
+}
+
+.form-control
+{
+	display: block;
+	padding:5px;
+	height: 30px;
+	width: 100%;
+}
+
+.form-control.control-lado
+{
+	display: inline-block;
+	width: 47%;
+	margin-right: -2px;
+	margin-left: -2px;
+	vertical-align: middle;
+}
+
+.form-control.control-menosalto
+{
+	padding: 7.5px 15px;
+	height: 36px;
+}
+
+#logo
+{
+	width: 150px;
+	height: auto;
+}
+
+@media (min-width: 1200px)
+{
+	.container
+	{
+		width: 1140px;
+	}
+
+}
+
+@media (max-width: 1199px)
+{
+	.container
+	{
+		width: 960px;
+	}
+
+}
+
+@media (max-width: 991px)
+{
+	.container
+	{
+		width: 750px;
+	}
+
+	.columna-tabletl-50
+	{
+		width: 50%;
+		flex-basis: 50%;	
+	}
+
+	.seccion-proximos .columna-50 .contenedor-img-proximo {
+	    padding-bottom: 100%;
+	}
+
+}
+
+
+@media (max-width: 767px)
+{
+
+	.container
+	{
+		width: 100%;
+	}
+
+	.columna-mobile-50
+	{
+		width: 50%;
+		flex-basis: 50%;	
+	}
+
+	.columna-mobile-100
+	{
+		width: 100%;
+		flex-basis: 100%;	
+	}
+
+	.seccion {
+	    padding-top: 30px;
+	    padding-bottom: 30px;
+	}
+
+	.seccion-video
+	{
+		height: 100vh;
+	}
+
+	.seccion-video .container-fluid
+	{
+		padding-bottom: 0;
+		height: 100%;
+	}
+
+	.seccion-video .container-fluid .bloque-textos
+	{
+	    width: 100%;
+	    left: 0;
+	    right: 0;
+	    margin-left: 0;
+	}
+
+	.seccion-video .container-fluid .bloque-textos h1
+	{
+		font-size: 40px;
+	}
+
+	.burguer
+	{
+		display: block;
+		color: #fff;
+		font-size: 40px;
+	}
+
+	.menu
+	{
+		display: none;
+	}
+}
+
+@media (max-width: 767px) and (orientation : portrait)
+{
+
+}
