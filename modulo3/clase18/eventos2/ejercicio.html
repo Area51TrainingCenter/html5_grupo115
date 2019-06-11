@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style >
+		section
+		{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			align-items: center;
+			height: 95vh;
+			width: 100%;
+		}
+		.cuadrados
+		{
+			width: 100px;
+			height: 100px;
+			border:1px solid #000;
+			transition: all .5s ease-in;
+		}
+
+		.cuadrados.cuadradorojo
+		{
+			background-color: red;
+		}
+		.cuadrados.cuadradoazul
+		{
+			background-color: blue;
+		}
+
+		.cuadrados.cuadradoamarillo
+		{
+			background-color: yellow;
+		}								
+	</style>
+</head>
+<body>
+	<a href="#" id="botonrojo">CAMBIAR A ROJO</a>
+	<a href="#" id="botonazul">CAMBIAR A AZUL</a>
+	<a href="#" id="botonamarillo">CAMBIAR A AMARILLO</a>
+	<section>
+		<div class="cuadrados"></div>
+		<div class="cuadrados"></div>
+		<div class="cuadrados"></div>
+	</section>	
+	<script>
+		var btnrojo = document.getElementById("botonrojo");
+
+		btnrojo.addEventListener("click",function(){
+			var cuadrados = document.getElementsByClassName("cuadrados");
+			cambiocolor(cuadrados,"cuadradorojo");			
+		});
+
+		var btnazul = document.getElementById("botonazul");
+
+		btnazul.addEventListener("click",function(){
+			var cuadrados = document.getElementsByClassName("cuadrados");
+			cambiocolor(cuadrados,"cuadradoazul");
+		});
+
+		var btnamarillo = document.getElementById("botonamarillo");	
+		
+		btnamarillo.addEventListener("click",function(){
+			var cuadrados = document.getElementsByClassName("cuadrados");
+			cambiocolor(cuadrados,"cuadradoamarillo");
+		});
+
+		function cambiocolor(xixa,papa)
+		{
+			for (var i = 0; i < xixa.length; i++) {
+				xixa[i].className = "cuadrados "+papa;
+			}
+		}
+
+	</script>
+</body>
+</html>
