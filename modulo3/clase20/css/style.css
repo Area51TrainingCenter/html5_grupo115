@@ -1,0 +1,46 @@
+.fondo
+{
+	background-color: rgba(0,0,0,.5);
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	display: none;
+}
+
+.fondo.abierto
+{
+	display: block;
+}
+
+.cuadro
+{
+	background-color: #fff;
+	height: 500px;
+	width: 75%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	display: none;
+}
+
+.cuadro.abierto
+{
+	display: block;
+}
+
+.cuadro .cerrar
+{
+	position: absolute;
+	top: -15px;
+	right: -15px;
+	width: 30px;
+	height: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	text-decoration: none;
+	background-color: red;
+	border-radius: 100%;
+}
