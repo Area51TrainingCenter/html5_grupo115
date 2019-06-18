@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>	
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+
+		body
+		{
+			margin: 0;
+		}
+
+		.contenedor-imagen
+		{
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			flex-wrap: wrap;
+		}
+
+		.contenedor-imagen img
+		{
+			width: 100px;
+			cursor: pointer;
+		}
+
+		.imagen-grande
+		{
+			width: 100%;
+		}		
+
+	</style>
+	<script src="js/jquery.js"></script>
+</head>
+<body>
+	<section class="contenedor-imagen">
+		<img src="img/imagen1.jpg" class="imagen" title="imagen 1">
+		<img src="img/imagen2.jpg" class="imagen" title="imagen 2">
+		<img src="img/imagen3.jpg" class="imagen" title="imagen 3">
+		<img src="img/imagen4.jpg" class="imagen" title="imagen 4">
+		<img src="img/imagen5.jpg" class="imagen" title="imagen 5">
+	</section>
+	<section class="contenedor-imagen-grande">
+		<img src="" class="imagen-grande">
+		<h1></h1>
+	</section>
+
+	<script src="js/galeria.js"></script>
+</body>
+</html>
