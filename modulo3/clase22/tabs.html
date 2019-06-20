@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+		<script src="js/jquery.js"></script>
+		<style>
+		*{
+			box-sizing: border-box;
+		}
+		body{
+			margin: 0;
+			padding: 0;
+		}
+
+		h2
+		{
+			margin: 0;
+			position: relative;
+			padding: 15px 45px 15px 15px;
+		}
+
+		h2 i
+		{
+			position: absolute;
+			right: 15px;
+			top: 50%;
+			transform: translateY(-50%);
+			font-size: 30px;
+		}		
+
+		.item-acordeon
+		{
+			border-bottom: 1px solid #ccc;
+			background-color: #bbb;
+		}
+
+		.contenido-acordeon
+		{
+			display: none;	
+			padding: 15px;
+			background-color: #fff;
+			border: 1px solid #000;
+		}
+
+		.contenido-acordeon.active
+		{
+			display: block;
+		}
+
+		.lista-botones
+		{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.lista-botones a
+		{
+			padding: 15px;
+			border: 1px solid #000;
+			background-color: #fff;
+			color: #000;
+			text-decoration: none;
+			text-transform: uppercase;
+		}	
+
+		.lista-botones a.active
+		{
+			border: 1px solid #000;
+			background-color: #ccc;
+			color: #000;
+		}		
+		</style>
+	</head>
+	<body>
+		<div class="lista-botones">
+			<a href="#" class="boton active">tab 1</a>
+			<a href="#" class="boton">tab 2</a>
+			<a href="#" class="boton">tab 3</a>
+			<a href="#" class="boton">tab 4</a>
+		</div>
+		<div class="contenido-acordeon active">
+			<h2>Contenido 1</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua.</p>
+			<p>Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur.</p>
+			<p>Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>			
+		<div class="contenido-acordeon">
+			<h2>Contenido 2</h2>			
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua.</p>
+			<p>Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur.</p>
+			<p>Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+		<div class="contenido-acordeon">
+			<h2>Contenido 3</h2>			
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua.</p>
+			<p>Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur.</p>
+			<p>Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+		<div class="contenido-acordeon">
+			<h2>Contenido 4</h2>			
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua.</p>
+			<p>Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur.</p>
+			<p>Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>							
+		<script src="js/funciones.js"></script>
+	</body>
+</html>
