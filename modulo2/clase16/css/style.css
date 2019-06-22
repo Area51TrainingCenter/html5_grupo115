@@ -996,7 +996,11 @@ input[type="email"]
 
 @media (max-width: 767px)
 {
-
+	body.open
+	{
+		overflow: hidden;
+	}
+	
 	.container
 	{
 		width: 100%;
@@ -1048,12 +1052,40 @@ input[type="email"]
 		display: block;
 		color: #fff;
 		font-size: 40px;
+		position: relative;
+		z-index: 2;
 	}
 
 	.menu
 	{
-		display: none;
+		position: fixed;
+		height: 100%;
+		width: 100%;
+		padding-top: 300px;
+		padding-bottom: 300px;
+		padding-left: 15px;
+		padding-right: 15px;
+		transition: all .3s ease-in;
+		transform: translateX(-100%);
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-color: blue;
+		top: 0;
+		left: 0;
 	}
+
+	.menu a
+	{
+		margin-bottom: 15px;
+	}
+
+	.menu.open
+	{
+		transform: translateX(0%);
+	}	
 }
 
 @media (max-width: 767px) and (orientation : portrait)
